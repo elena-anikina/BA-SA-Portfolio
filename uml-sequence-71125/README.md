@@ -39,7 +39,6 @@
 
 ### ✅ Сценарий A: Успешная авторизация (валидный токен)
 
-**После шага 12:**
 13. **Service Backend**: Проверка подписи JWT токена
 14. **Service Backend**: Получение данных из JWT токена
 15. **Service Backend → DB**: SQL-запрос на поиск данных
@@ -51,7 +50,6 @@
 
 ### ❌ Сценарий B: Неуспешная авторизация (невалидный токен)
 
-**После шага 12:**
 13. **Service Backend**: Проверка подписи JWT токена → ОШИБКА
 21. **Service Backend → Service Proxy**: Ошибка 401 Unauthorized
 22. **Service Proxy → UI Frontend**: Ошибка 401 Unauthorized  
